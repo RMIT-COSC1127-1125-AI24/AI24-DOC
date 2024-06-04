@@ -322,7 +322,7 @@ YES, and if you want to go to more than one tutorial, feel free to do so, the mo
 
 ## Are there team assessments or projects?
 
-No. In the 2023 edition the course, all assessments are _individual_. This means that you can have full ownership on your work and plan by yourself!
+No. In the 2024 edition of the course, all assessments are _individual_. This means that you can have full ownership on your work and plan by yourself!
 
 ## I have not received the result of my assessment, why?
 
