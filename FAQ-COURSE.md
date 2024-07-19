@@ -192,7 +192,7 @@ First, be assured that the use of several platforms and tools is not random: _th
 
 In general, for this course we are mostly using EdStem and GitHub alone, that's all, with occasionally 2-4 emails for details on the results (~1 email per project). That does not seem to be an overload for uni-level.
 
-More broadly, I am on the opinion that it is actually _not_ so good for the student learning to prioritize "uniformity" due to two reasons:
+More broadly, I am on the opinion that it is actually _not_ so good for the student learning to prioritize "uniformity" due to (at least) two reasons:
 
 1. First, it is just **impossible and unrealistic in Computer Science**: there are lots of technologies and systems around that are all useful in their own way and that different people use, be Github, Slack, Canvas, Latex, email, Discord, Edstem, Travis, Jira, stack-overflow, Menti, etc.
    * A good CS practicioner should not only be versed on many of them, but also flexible adaptive enough to learn and manage new ones as they are needed or requested (e.g., at work or on an open-source project).

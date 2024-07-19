@@ -13,3 +13,4 @@ And if you find any issues, typo, or out-dated answer, please let us know in the
 - [Academic Integrity Information](ACADEMIC_INTEGRITY.md): general guidelines on academic integrity for the course.
   - [Code Integrity](CODE-INTEGRITY.md): Guidelines for academic integrity when _coding_, or guidelines on academic integrity when coding.
 - [SE and Git Practices](SE-PRACTICES.md): information about best SE and version control practices when developing the course projects.
+- [EDSTEM-STEM FAQ](FAQ-EDSTEM.md): question on EdStem forum.
