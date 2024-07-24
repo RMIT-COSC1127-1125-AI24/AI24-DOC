@@ -15,6 +15,7 @@ As any FAQ page, this page is always "under construction". As we realize that so
   - [Can I just add dummy/padding commits to have more commits?](#can-i-just-add-dummypadding-commits-to-have-more-commits)
 - [GIT \& GITHUB](#git--github)
   - [Git, GitHub, what is that?](#git-github-what-is-that)
+  - [Can I just use GitHub Desktop instead of command line `git`?](#can-i-just-use-github-desktop-instead-of-command-line-git)
   - [How do I submit my project solution in my GIT repository?](#how-do-i-submit-my-project-solution-in-my-git-repository)
   - [How do I change the submission tag if I have already tagged one commit for submission?](#how-do-i-change-the-submission-tag-if-i-have-already-tagged-one-commit-for-submission)
   - [How do I update the tags in my local repo? I get rejection with "(would clobber existing tag)" message](#how-do-i-update-the-tags-in-my-local-repo-i-get-rejection-with-would-clobber-existing-tag-message)
@@ -131,6 +132,18 @@ We will use proper (git) version control in all our programming projects. This i
 - [Git \& GitHub Tutorial & Reference @ Javatpoint](https://www.javatpoint.com/git).
 
 There are lots more good resources on the web of course!
+
+## Can I just use GitHub Desktop instead of command line `git`?
+
+You can use it, as long as you are also able to resort to command line `git` when needed.
+
+GitHub Desktop, or any other programming tool like a text editor/IDE, package manager, etc, have strengths and limitations. While using GitHub Desktop is not inherently bad, as long as it is fit for your purpose and provides an efficient workflow, there is value in having an understanding how the tools work, because that will help you when they fail or you reach their limits. But as long as you are confident that you could understand the underlying details if you needed to, all good! 👍
+
+Now, if you are using GitHub Desktop just because you do not know how to use git command line, then that is ineed not good enough (both in terms of skills and attitude) for a student taking this course, and a CS/IT student overall anwyays. You are expected to be able to know git more than its high-level tools, and to learn whatever gaps you have. 😉
+
+Critically, you will not get help from staff about how to use GitHub Desktop, since we (or at least most of us) don't use it. 🤦
+
+
 ## How do I submit my project solution in my GIT repository?
 
 You submit by **tagging the _exact_ commit that you want to submit and be marked**, using the exact name given in the assignment specification. We will ONLY marked tagged submissions and will ONLY mark the tagged commit. Students can have many commits, and branches, even commits after the deadline. We will mark ONLY what you submit.
