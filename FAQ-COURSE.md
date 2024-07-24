@@ -24,6 +24,7 @@ For specific FAQ on PACMAN see [here](../AI23-DOC.git/FAQ-PACMAN.md).
   - [Do we have lectures? What is a lectorial?](#do-we-have-lectures-what-is-a-lectorial)
   - [Can I attend in-person lectorials/tutorials remotely?](#can-i-attend-in-person-lectorialstutorials-remotely)
   - [When are lecture slides made available?](#when-are-lecture-slides-made-available)
+  - [What is the `01_Canvas` session?](#what-is-the-01_canvas-session)
   - [Will there be lectorial recordings?](#will-there-be-lectorial-recordings)
   - [When are we getting the tute solutions and why are we not getting them all quickly?](#when-are-we-getting-the-tute-solutions-and-why-are-we-not-getting-them-all-quickly)
   - [What about tutes, labs, consultation times? Will they be recorded?](#what-about-tutes-labs-consultation-times-will-they-be-recorded)
@@ -262,23 +263,38 @@ No. RMIT is committed to on-campus experience and there is no hybrid teaching an
 
 Please refer to [this question](#attendance-do-i-need-to-attend-lectorials-and-tutorials).
 
+However, lectorials (not tutorials) will be recorded, see question below on that.
+
 ## When are lecture slides made available?
 
 Slides in a lectorial play a much less important role than what they used to be on lectures. They are not anymore self-contained and comprehensive, and they may only contain news or some general information used by the instructor, but no technical details or comprehensive coverage.
 
 Said so, when the slides have useful information (e.g., news or specific technical points discussed), they will be provided after the session in EdStem.
 
-## Will there be lectorial recordings?
+## What is the `01_Canvas` session?
 
-Lectorials are meant to be automatically recorded under **Echo360**. However, there are two important caveats to this:
+Because there seems to be more students than the room capacity, they opened an additional "Canvas" section, which means the lectorial will be recorded:
+
+![](img/canvas_session.png)
+
+ Fine, and everybody can watch the recording, but there is always a LOT of free space in the classroom so you are always welcome to join. See the next section for "recordings" of the session.
+
+## Will there be lectorial recordings? 
+
+YES! Lectorials are meant to be automatically recorded under **Echo360**. In fact, because presumably there are too many students enrolled in the course, they opened a "`01_Canvas`" registration which means that it can be taken online via the recording. Said so, as I stated in the first lectorial and it was obvious, there is ALWAYS plenty of space in the room (which is great!), so this should not be an issue at all.
+
+While lectorials are recorded in ECHO365, there are two important caveats to this that you should know:
 
 1. **Recordings are out of my control** and in the past there have been numerous issues with recordings, including missing recordings, muted recordings, noisy or very low audio, no video, truncated videos, missing projection, etc. Because of this and the fact that being in the room face-to-face is probably the main benefit of taking a Uni course rather than online videos, I strongly suggest students to _make the effort and attend sessions in person_.
 
-2. **Recordings need to be checked, processed, and edited before full release**. Among other things, recordings have the potential of "catching" private conversations that need to be trimmed. Because this is a very time consuming task (and I have plenty of other course-related things to attend), I often do this inspection and editing in batches, so expect recordings with a significant delay (weeks).
+2. **Recordings need to be checked, processed/edited before full release**. Among other things, recordings have the potential of "catching" private conversations that need to be trimmed. Because this is quite a time consuming task (and I have plenty of other course-related things to attend), I often do this inspection and editing in batches, so expect recordings with a delay.
 
-The key here is that recordings are **NOT meant to be used as replacements of the in-person session**, but rather review material for later (e.g., to double check). So, I would strongly suggest not counting on them and encourage everyone to join the show in person! Arguably, they could also be very "boring": long, not curated, with gaps and silences (or very low volume) due to interactions in the room, etc.
+The key here is that recordings are **NOT meant to be used as replacements of the in-person session**, but rather review material for later (e.g., to double check). So, I would strongly suggest not counting on them and encourage everyone to join the show in person! Arguably, recordings could also be very very "boring": long, not curated, with gaps and silences (or very low volume) due to interactions in the room, etc.
 
 Last, but not least, showing up and "being there", even if not asking, is a way to **contribute to the learning environment**: to your learning and the learning of everyone around. So, let's take full advantage and be thankful that we can get together again, now that COVID is over. :-)
+
+Said so, uni is not school, so I cannot obliged anyone to come to lectorials and ultimately it is up to each student. There is no direct penalty for not attending lectorials, except when there are assessments (in which case not attending attracts zero marks and warrants no re-submission of the component).
+
 
 ## When are we getting the tute solutions and why are we not getting them all quickly?
 
