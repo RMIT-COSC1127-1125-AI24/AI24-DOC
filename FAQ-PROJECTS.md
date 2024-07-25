@@ -29,7 +29,7 @@ As any FAQ page, this page is always "under construction". As we realize that so
 - [PYTHON](#python)
   - [What version of Python should I use?](#what-version-of-python-should-i-use)
   - [How do I run Python 3.8 in `coreteachingXX.csit.rmit.edu.au`?](#how-do-i-run-python-38-in-coreteachingxxcsitrmiteduau)
-  - [How do I install a package/module in `coreteaching` using `pip`?](#how-do-i-install-a-packagemodule-in-coreteaching-using-pip)
+    - [How do I install a package/module in `coreteaching` using `pip`?](#how-do-i-install-a-packagemodule-in-coreteaching-using-pip)
   - [How do I know the type of a variable in Python?](#how-do-i-know-the-type-of-a-variable-in-python)
   - [AttributeError: module 'importlib' has no attribute 'util'](#attributeerror-module-importlib-has-no-attribute-util)
   - [How do I represent infinity?](#how-do-i-represent-infinity)
@@ -315,7 +315,7 @@ So, _how fast is your laptop_?
 
 ## What version of Python should I use?
 
-All projects run on **Python 3.8+**, so your code must be written for such a version. We use Python 3.10.
+All projects run on **Python 3.9+**, so your code must be written for such a version. We use Python 3.10. Note that Python 3.8 is [ending its support these days](https://devguide.python.org/versions/).
 
 Some Linux distributions come with both `python2` and `python3` installed but default to `python2` for the python command. In this case, you should use the `python3` command in place of python to explicitly use version 3.x.
 
@@ -325,7 +325,9 @@ There is no problem **having more than one Python version installed in your mach
 
 ## How do I run Python 3.8 in `coreteachingXX.csit.rmit.edu.au`?
 
-You need to activate it first using `scl`:
+We do not recommend using those servers, they are fairly out-of-date and you have very little control over them (e.g., what you can install). These days the best option is to use your own machine/laptop.
+
+The default Python in these servers is 2.7! 🤦 However, you can activate 3.6 and 3.6 using `scl`:
 
 ```bash
 [eXXXXX@csitprdap01 ~]$ scl enable rh-python38 bash
@@ -338,9 +340,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-Said so, we do not recommend using those servers but your own machine. Much better. :-)
 
-## How do I install a package/module in `coreteaching` using `pip`?
+### How do I install a package/module in `coreteaching` using `pip`?
 
 Use option `--user` as you cannot do system-wide install:
 
