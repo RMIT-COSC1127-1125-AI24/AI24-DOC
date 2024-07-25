@@ -14,7 +14,7 @@ These include:
 * _Never upload files:_ git should not be used as a storage service. Setup your system to do proper meaningful commits and do not use GitHub's upload button ever.
 * _Never ever force push to repo:_ forcing will re-write your repo history and cause serious problems and interferences with our mirroring system. Instead use `git revert` to undo a commit by creating another commit. Check the FAQ for projects for more info on `git revert` (or search for it and learn how to use it).
 
-Besides proper commit behavior to obtain a clean and meaning history, you should:
+Besides proper commit behavior to obtain a clean and meaning history, you should also consider the following if working on non-trivial tasks/projects:
 
 * _Use the Issue Tracker:_ use issues to keep track of tasks, enhancements, and bugs for your projects. They are also a great way to collaborate in a team, by assigning issues and discussing on them directly. Check GitHub [Mastering Issues Guide](https://guides.github.com/features/issues/).
 * _Follow good workflow and use branches:_ use the standard branch-based development workflow; it will make your team much more productive and robust! Check GitHub [Workflow Guide](https://guides.github.com/introduction/flow/). When merging or re-basing, squash commits _only_ when it will yield a better quality set of commits in the main branch; in general you should avoid squashing (e.g., do not squash commits that are by themselves meaningful).
