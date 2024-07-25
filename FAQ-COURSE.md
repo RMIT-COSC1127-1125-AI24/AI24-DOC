@@ -306,9 +306,7 @@ In tutorials you can always check with the tutor your solution, provided you sho
 
 ## What about tutes, labs, consultation times? Will they be recorded?
 
-The short answer is _no_, they will not be recorded.
-
-Tutes, labs, consultation times, are all interactive in nature. So, they will not be recorded, mostly because of three reasons:
+Tutes, labs, consultation times, are all interactive in nature. So, they will not be recorded:
 
 1. We want to promote **active contribution** and **participation**.  There is no contribution when one just watches what others have done. To contribute, one needs to "be there".
 2. It has been clear that recordings make some people who **would otherwise attend**, not attend. Bad outcome indeed.
@@ -316,7 +314,6 @@ Tutes, labs, consultation times, are all interactive in nature. So, they will no
    * Note this is also one of the main reasons why we use EdStem: it allows _anonymous posts_ and it has been prove that this increases participation a LOT!
 
 This rationale is intended to _promote_ a better learning environment on the whole. Of course, nothing is perfect and, analogous to programming languages, we can only _promote_ a paradigm (but not fully force it!) 😉
-
 
 ## Why don't we get the concrete final answer to questions instead of getting a rephrase of questions or a question back?
 
