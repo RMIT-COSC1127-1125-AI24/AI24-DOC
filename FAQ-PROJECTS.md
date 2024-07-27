@@ -671,7 +671,7 @@ Think about what some relaxations of the problem are, and how you might design a
 
 The key point to understand here is *why do we use heuristics after all?* We use heuristics to guide the search---informed search---so that it runs _faster_.
 
-OK, but _faster thank what?_ Well, at least faster than if we do not use a heuristic, right? So, we can set the heuristic to just be `0` (by just doing `return 0` at the top of function `foodHeuristic`) and see how much it would take by running:
+OK, but _faster than what?_ Well, at least faster than if we do not use a heuristic, right? So, we can set the heuristic to just be `0` (by just doing `return 0` at the top of function `foodHeuristic`) and see how much it would take by running:
 
 ```shell
 $ python pacman.py -l trickySearch -p AStarFoodSearchAgent -q
@@ -709,11 +709,9 @@ When solving this question consider:
 1. How good is your A* implementation?
 2. How good is your heuristic?
 
-Basically you are after a good enough A* implementation and a heuristic that _improves_ A* when used without heuristic.
+Basically you are after a good enough A* implementation and a heuristic that _significantly improves_ A* when used without heuristic.
 
 Remember that a heuristic is useful, only if gives benefit over not using it; otherwise what is the point of it? If your heuristic expands very few nodes, BUT it takes a lot of time to compute, then the heuristic will not be beneficial after all. Consider, what would be the very best heuristic you can use (but not useful)? ;-)
-
-We will put the deadline timeout relative to **our** non-heuristic version (i.e., `h=0`) and you can do that in your machine to make sure you are at least playing the game seriously against `h=0`.  😉
 
 Finally, take note of the comment in the source code:
 
