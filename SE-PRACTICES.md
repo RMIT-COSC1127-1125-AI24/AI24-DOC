@@ -26,3 +26,12 @@ In addition, if working in groups for a team-based project:
 * _Communicate in the GitHub (Discussions, Issues, Pull Requests, and Projects):_ in team projects, members are expected to communicate and coordinate in an adequate, professional, and efficient manner. In GitHub, teams can use Discussions, Issues and Pull Requests, and Projects within the repo of the project. Video and voice chats outside of GitHub are permissible (and encouraged), but communication and coordination should not be limited to that.
 
 Poor SE and version control practices can have a significant impact in the final mark of an assessment. For example, a single commit with all the solution will attract zero marks overall, even if the solution does perform perfectly.
+
+## Sample of great Git management
+
+Here are some examples of fantastic Git history and management:
+
+ <p align="center">
+    <img src="img/great-git_repo_commits-01.png" width=350>
+    <img src="img/great-git_repo_commits-02.png" width=350>
+ </p>
