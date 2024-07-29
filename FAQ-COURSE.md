@@ -11,6 +11,8 @@ For specific FAQ on PACMAN see [here](../AI23-DOC.git/FAQ-PACMAN.md).
   - [I work outside and have other commitments, should I take this course?](#i-work-outside-and-have-other-commitments-should-i-take-this-course)
   - [I want to discuss something face-to-face, can I?](#i-want-to-discuss-something-face-to-face-can-i)
   - [Attendance: do I need to attend lectorials and tutorials?](#attendance-do-i-need-to-attend-lectorials-and-tutorials)
+  - [What are the pre-reqs for AI?](#what-are-the-pre-reqs-for-ai)
+  - [I have not taken A\&A. Can I take the AI course without the pre-req](#i-have-not-taken-aa-can-i-take-the-ai-course-without-the-pre-req)
   - [Is there any mentoring program for this course?](#is-there-any-mentoring-program-for-this-course)
   - [Can I audit the course?](#can-i-audit-the-course)
   - [Course Survey Experience: what? why?](#course-survey-experience-what-why)
@@ -87,6 +89,26 @@ In the last couple of years, during COVID times, we have experienced first-hand 
 **IMPORTANT:** Note that, from this semester, RMIT is committed to _in-person teaching on campus_. So, the course will NOT run online or in hybrid mode anymore, as it did in previous years due to COVID. This means that you should _not_ expect that what happens face-to-face (in-person) will have an "online replacement" (be online streaming, recording, replacement sessions, etc.) This does not mean there will be no online presence, sure there will be (e.g., forum, GitHub), but as additional and complementary resources, not as replacements or interchange.
 
 So, hope to see you in the room, interacting with teachers and fellow students!
+
+## What are the pre-reqs for AI?
+
+Being a last year Bachelor of CS course, this course basically relies on 3 components: _analysis of algorithms and datastructures_, _discrete mathematics_, and _advanced programming_.
+
+To achieve this, the course has [COSC1285/2123 Algorithms & Analysis](http://www1.rmit.edu.au/courses/004302) (A&A) as a MUST ENFORCED pre-requisite:
+
+![](img/pre-reqs-AI.png)
+
+In turn, to take (and pass) A&A, one needs to complete an advanced (second or third course) programming course and a course in discrete mathematics:
+
+![](img/pre-reqs-AA.png)
+
+For Bachelor in CS, for which AI is core course, the pre-reqs are already built-in in the program structure.
+
+When you take the course as an option/elective (i.e., it is not core in your program), you need to plan ahead and make sure that "you ensure you have completed the pre-requisites" as stated above in the program guide. The alternative is to ask for an exception waiver of the pre-req by providing evidence that you have taken (and passed) an equivalent course elsewhere. Please contact your Program Manager to understand who to submit that request.
+
+## I have not taken A&A. Can I take the AI course without the pre-req
+
+See question above. As the program guide states, you are to plan ahead and meet the pre-reqs, they are there for a reason of course. Note enforced pre-reqs cannot be replaced by "personal statements".
 
 ## Is there any mentoring program for this course?
 
