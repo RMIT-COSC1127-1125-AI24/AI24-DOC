@@ -640,7 +640,7 @@ Some parts are extension that may not be used in a particular edition of the cou
 
 ## Can I import standard libraries?
 
-Yes. For example, importing `sys` to access `sys.maxsize` would be totally fine. Do not import libraries, though, that you wouldn't expect any Python install to include.
+Yes, as long as they are reasonable and do not contradict the spec. For example, importing `sys` to access `sys.maxsize` would be totally fine. Do not import libraries, though, that you wouldn't expect any Python install to include. Or do not use libraries or classes that go against the spec, for example by not using the data structures provided to you in `util.py`!
 
 ## What actions should I return in the search algorithms?
 
