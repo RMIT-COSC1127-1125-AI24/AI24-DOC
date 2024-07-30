@@ -521,7 +521,22 @@ In general, before spending a lot of time doing experimental analysis, look at y
 
 ## How can I debug my system?
 
-While you may want to do some print outs here and there, eventually using a debugger is the way to go. Check [this video](https://www.youtube.com/watch?v=w8QHoVam1-I) for a quick guide to debugging python in VSCode (you can do similar things in PyCharm or other editors as well). This is far more flexible and reliable than print messages. :-)
+While you may want to do some print outs here and there, eventually using a debugger is the way to go. Check [this video](https://www.youtube.com/watch?v=w8QHoVam1-I) for a quick guide to debugging python in VSCode (you can do similar things in PyCharm or other editors as well). This is far more flexible and reliable than print messages. :-) 
+
+To make life easy for yourself, you will want to create a debugging configuration in VSCode which runs the autograder file, regardless of which file you have open. You will also want to pass in the arguments `-q q1` to run only the first question (or whichever you are interested in). You can accomplish this by adding the following text to the `launch.json` file which stores all the debug configurations:
+```json
+      {
+          "name": "Python Debugger: autograder",
+          "type": "debugpy",
+          "request": "launch",
+          "program": "autograder.py",
+          "console": "integratedTerminal",
+          "args": [
+              "-q",
+              "q1"
+          ]
+      }
+```
 
 ## Can I change the pacman infrastructure at run-time?
 
