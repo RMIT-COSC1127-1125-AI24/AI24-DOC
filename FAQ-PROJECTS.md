@@ -67,6 +67,7 @@ As any FAQ page, this page is always "under construction". As we realize that so
   - [Can we create a new BFS for the part 5? My implementation doesn't fit with my new state representation!](#can-we-create-a-new-bfs-for-the-part-5-my-implementation-doesnt-fit-with-my-new-state-representation)
   - [Break-points do not work on `search.py`, why?](#break-points-do-not-work-on-searchpy-why)
   - [In the feedback autograder, what does `expanded_states` means?](#in-the-feedback-autograder-what-does-expanded_states-means)
+  - [What we should return for the failure case, ie. when no path can be found?](#what-we-should-return-for-the-failure-case-ie-when-no-path-can-be-found)
 -------------------------
 
 # GENERAL
@@ -789,3 +790,7 @@ In fact, this is the best practice because the actual system is `pacman.py`, not
 
 Basically, the number of times you have done expansion of nodes, that is, number of calls to `getSuccessors()`` method. Makes sense? :-)
 
+
+## What we should return for the failure case, ie. when no path can be found?
+
+`None`
