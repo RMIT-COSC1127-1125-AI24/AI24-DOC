@@ -36,6 +36,7 @@ As any FAQ page, this page is always "under construction". As we realize that so
 - [GENERAL PACMAN](#general-pacman)
   - [What is the best way to develop my solutions for the Pacman project?](#what-is-the-best-way-to-develop-my-solutions-for-the-pacman-project)
   - [How to run Pacman remotely from `coreteaching`?](#how-to-run-pacman-remotely-from-coreteaching)
+  - [Python libraries and `requirements.txt` file, what are they?](#python-libraries-and-requirementstxt-file-what-are-they)
   - [How do I setup a system in Windows with Python?](#how-do-i-setup-a-system-in-windows-with-python)
   - [Can I use `problem._visited`?](#can-i-use-problem_visited)
   - [I get "`_tkinter.TclError: no display name and no $DISPLAY environment variable`" error when running in WSL or ssh](#i-get-_tkintertclerror-no-display-name-and-no-display-environment-variable-error-when-running-in-wsl-or-ssh)
@@ -415,6 +416,16 @@ If you use Windows, then you need an X server running and set your ssh client (e
 [![Alt text](https://img.youtube.com/vi/vwZXhTykSis/0.jpg)](https://www.youtube.com/watch?v=vwZXhTykSis)
 
 Said so, for development, we strongly suggest to clone your repo locally on your machine and work there (e.g., using PyCharm, Visual Code Studio, or even ECLIPSE).
+
+## Python libraries and `requirements.txt` file, what are they?
+
+The file `requirements.txt` should have the libraries that are required, you can get these modules running:
+
+```shell
+$ pip install -r requirements.txt
+```
+
+You will see in some other questions in this FAQ that some errors are because the system is missing some library (like `tk` for the graphical display).
 
 ## How do I setup a system in Windows with Python?
 
