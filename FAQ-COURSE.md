@@ -49,6 +49,7 @@ For specific FAQ on PACMAN see [here](../AI23-DOC.git/FAQ-PACMAN.md).
   - [In a code assignment/project, how do I make sure I do not go against academic integrity?](#in-a-code-assignmentproject-how-do-i-make-sure-i-do-not-go-against-academic-integrity)
   - [Why did I get 57 in the assignment/project if it is 5% of the course?](#why-did-i-get-57-in-the-assignmentproject-if-it-is-5-of-the-course)
   - [How do I prepare for the final in-person assessment (THE/EC)?](#how-do-i-prepare-for-the-final-in-person-assessment-theec)
+  - [I will not be around for the final in-person assessment, can I take it online or before?](#i-will-not-be-around-for-the-final-in-person-assessment-can-i-take-it-online-or-before)
 
 # GENERAL
 
@@ -501,6 +502,17 @@ Finally, check this great guidance on how to do effective study, from Coursera:
 
 https://www.coursera.org/articles/study-habits
 
-You will recognise that several tips overalp with what was discussed above and suggest that besides putting time, one has to do it well, with quality.
+You will recognise that several tips overlap with what was discussed above and suggest that besides putting time, one has to do it well, with quality.
 
 All the best & hope this helps!!
+
+
+## I will not be around for the final in-person assessment, can I take it online or before?
+
+Students are expected to **make themselves available for all their assessments**, including in-person final ones between Weeks 13-16. This is normal and not just an RMIT thing, all universities have final assessment after the teaching weeks. 🙂
+
+Therefore, we will **_not_** prepare and conduct assessments via video calls or online; or also individual one-to-one assessments.
+
+Remember we have 300+ students and everybody have their own constraints and personal circumstances (family, work, travel, holidays, etc.). It would be TOTALLY impossible for us to cater for each individual circumstances, we just do not have the bandwidth (and we educators also have our lives...).
+
+What you can do is to **apply for SPC early in advance**, and provide your evidence for such request. If granted, you will be allowed to take a new assessment in the **DEFERRED ASSESSMENT** period. For Semester 2, it is often early December. Please check the [Academic Calendar](https://www.rmit.edu.au/students/my-course/important-dates) of the year to know when exactly those assessment will be running. It is good you are thinking ahead on this, **good luck!**
