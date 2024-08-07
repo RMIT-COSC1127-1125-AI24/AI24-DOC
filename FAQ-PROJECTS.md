@@ -493,7 +493,10 @@ If you get something like this on your Mac:
 
 ![Blank screen on Mac](img/tkinter-mac-python2.jpg)
 
-This is due to using Python 2.7. Any Mac users, make sure to run `python3 pacman.py` (or otherwise ensure you are using Python 3, not 2.x).
+This may be due to using Python 2.7. Any Mac users, make sure to run `python3 pacman.py` (or otherwise ensure you are using Python 3, not 2.x).
+Another cause seems to be related to using the wrong virtual environment. From a student:
+"To resolve this, I switched to using the Python 3.9 virtual environment as the interpreter, which corrected the issues.
+I initially tried using Pyenv with Python 3.9, but it still didn't work. Then I switched to Conda, and surprisingly, everything started working fine."
 
 ## Can't fit the Pacman window in my screen, can I resize it?
 
