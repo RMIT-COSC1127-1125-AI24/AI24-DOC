@@ -1,8 +1,8 @@
 # General FAQ for RMIT AI COSC1125/1127
 
-As any FAQ page, this page is always "under construction”. As we realize that some questions become common, we add them here…
+As any FAQ page, this page is always "under construction”. As we realis that some questions become common, we add them here…
 
-For specific FAQ on PACMAN see [here](../AI23-DOC.git/FAQ-PACMAN.md).
+For specific FAQ on programming projects see [here](FAQ-PROJECTS.md).
 
 - [General FAQ for RMIT AI COSC1125/1127](#general-faq-for-rmit-ai-cosc11251127)
 - [GENERAL](#general)
@@ -39,9 +39,9 @@ For specific FAQ on PACMAN see [here](../AI23-DOC.git/FAQ-PACMAN.md).
   - [I was never asked these questions in an assignment or test, why?](#i-was-never-asked-these-questions-in-an-assignment-or-test-why)
   - [I enrolled late into the course, can I get an extension?](#i-enrolled-late-into-the-course-can-i-get-an-extension)
   - [Can I ask questions on an assignment/assessment in the forum?](#can-i-ask-questions-on-an-assignmentassessment-in-the-forum)
-  - [I am very busy with other commitments (work, other subjects, travel, etc.) and may not be able to make the deadline, can I get a 2-3 day extension?](#i-am-very-busy-with-other-commitments-work-other-subjects-travel-etc-and-may-not-be-able-to-make-the-deadline-can-i-get-a-2-3-day-extension)
   - [Can I submit late? What is the penalty?](#can-i-submit-late-what-is-the-penalty)
-  - [What is the policy on Special Consideration (SPC)?](#what-is-the-policy-on-special-consideration-spc)
+  - [Can I get an extension for the assessment?](#can-i-get-an-extension-for-the-assessment)
+  - [I am very busy with other commitments (work, other subjects, travel, etc.) and may not be able to make the deadline, can I get an extension?](#i-am-very-busy-with-other-commitments-work-other-subjects-travel-etc-and-may-not-be-able-to-make-the-deadline-can-i-get-an-extension)
   - [I am not available for the Exercise Challenge (EC) or Take Home Exercises (THE), can I take them some other time?](#i-am-not-available-for-the-exercise-challenge-ec-or-take-home-exercises-the-can-i-take-them-some-other-time)
   - [I have a SPC for the THE/EC, how does it work?](#i-have-a-spc-for-the-theec-how-does-it-work)
   - [The room for the time-based and timetabled assessment is not comfortable; can we get a larger room?](#the-room-for-the-time-based-and-timetabled-assessment-is-not-comfortable-can-we-get-a-larger-room)
@@ -55,7 +55,7 @@ For specific FAQ on PACMAN see [here](../AI23-DOC.git/FAQ-PACMAN.md).
 
 ## Why this FAQ?
 
-This question is already answered in the [FAQ](../AI23-DOC.git/FAQ-COURSE.md). ;-)
+This question is already answered in the [FAQ](FAQ-COURSE.md). 😉
 
 If, somehow, you managed to get out of the [self-reference](https://en.wikipedia.org/wiki/Self-reference), then this is the list of usual questions that are asked about the course. A FAQ like this can help you find the answer right away. There are also many questions that can shed some light on the rationale of certain policies or approaches to the course. Also, by having an FAQ I am able to provide consistent and uniform answers to everyone. Of course, if you cannot find your question here, then you are invited to post it in the discussion forum. As questions become more common or usual, I add them to this list. So, maybe your new question can make it to the list! :-)
 
@@ -380,7 +380,7 @@ One important skill---a very important one---is to be able to handle new problem
 
 Enrolling and entering to the course late does not provide grounds for extensions, and so extensions will not be granted for that reason.
 
-When a student enrolls late, it is their responsibility not only to catch up by themselves, but to face any impact on assessments that may have occurred or are on the way. Assessments are carried out as per the course schedule for everyone; there are no multiple starting points depending on students' enrollments.
+When a student enrols late, it is **their** responsibility not only to catch up by themselves, but to face any impact on assessments that may have occurred or are on the way. Assessments are carried out as per the course schedule for everyone; there are no multiple starting points depending on students' enrolments.
 
 Because of this, it is fundamental that, before enrolling late, students discuss with their Program Manager the potential impact, consequences, and risks of doing so, and get explicit permission to do so.
 
@@ -392,33 +392,42 @@ Please also refer to [this question]((#i-enrolled-late-in-the-course-can-you-exp
 
 Please refer to the entry [Posting about assessments](https://docs.google.com/document/d/1HdrY91LIPRZOEni_jsCwmN8Oc8MrUzljen6qHzbtQeU/edit#heading=h.nj8m4hp7jeo2) in the Forum FAQ.
 
-## I am very busy with other commitments (work, other subjects, travel, etc.) and may not be able to make the deadline, can I get a 2-3 day extension?
-
-We have 200+ students and therefore lots of students could claim time constraints for multiple reasons. Besides the unmanageable workload that this would imply (reviewing and tracking each case, marking them at different times, different releases, etc.), I am _not able/allowed to arbitrarily judge_ which cases are OK and which ones are not: I would undoubtedly be making mistakes and hence treating students differently, _which can put me in a very risky situation due to fairness issues_.
-
-So, extensions are reserved to _extreme cases that are totally outside the control of the student_, such as health issues.
-
-We expect students enrolled in the course to _have arranged all their other commitments_ (e.g., work, courses, family, trips, etc.) beforehand to make sure they can carry out the course _under the planned schedule_.
-
-Also, we note that the difficulty of each assessment has been planned to be achievable within the time-frame, so claims about the difficulty of the task will not be entertained wrt extensions. Pushing one deadline for many students will not only complicate the execution of the course, but will put students in a more difficult situation for upcoming (more demanding) assessments.
-
-Finally, because of the nature of project assessments and the quick release of results, any SPC will probably be in the form of an **Equivalent Assessment**, that is, another _ assessment later on that will assess the same content but possibly in a different way. In most cases this will involve a pre-arranged in-person 1-2hrs closed-book assessment with the instructor (e.g., a set of exercises to complete).
-
 ## Can I submit late? What is the penalty?
 
 Yes, for assignment projects only (not timed and timetabled assessments), you can submit late with, albeit with a penalty. Assignment projects received late and without prior extension approval or special consideration will be penalised by a deduction of 10% of the total score possible per calendar day late for that assessment.
 
 Please note that late submissions are only allowed to assignments and projects, not for timed and timetabled assessments (e.g., in class quizzes, challenge exercises, or take-home exercises). These must be done during the time-frame allowed and no late submission is permitted.
 
-## What is the policy on Special Consideration (SPC)?
+## Can I get an extension for the assessment?
 
-The dates of all assessments in this course are given well in advance. Plan early your work around your commitments and workload, start on the assessments early, and submit them substantially before the deadline, preferably at least one or two days before. Submitting close to the deadline could be risky and you may fail to submit on time, for example due to loss of Internet, laptop problems, server delays, heavy workload, late enrollment, external commitments, etc
+**Yes!, but not only in some cases...**  As per policy, extensions are reserved to _extreme cases that are totally outside the control of the student_, such as health issues, bereavement, being the victim of a crime or other trauma; severe disruption to living arrangements or financial hardship.
 
-However, if you know you will be unable to complete an assignment due to illness or personal circumstances outside of your control, please contact your lecturer immediately for special consideration. Evidence will be required. In many cases, though, I cannot grant unilateral special considerations and you may need to go through RMIT formal process for [Special Consideration (SPC)](http://www.rmit.edu.au/students/specialconsideration).
+The dates of all assessments in this course are given well in advance. Plan early your work around your commitments and workload, start on the assessments _early_, and submit them substantially before the deadline, preferably at least one or two days before. Working and submitting close to the deadline could be risky and you may fail to submit on time, for example due to loss of Internet, laptop problems, server delays, heavy workload, late enrolment, external commitments, etc.
 
-Each request will be considered on an individual basis. If the request is approved, the deadline for the assignment will be extended. If the request is denied and the assessment missed, you will unfortunately receive a 0 for that assessment.
+However, if you know you will be unable to complete an assignment due to illness or personal circumstances outside of your control, please contact your lecturer immediately for special consideration and submit the [Application for Extension of Time for Submission of Assessable Work Form](https://www.rmit.edu.au/content/dam/rmit/au/en/students/documents/my-course/assessment-results/application-extension.pdf):
 
-Please note that while no SPC will be granted frivolously, any request received close to the assessment date (or after the date!) will generally not be accepted except in the most extreme circumstances. This is to encourage students to plan days and weeks ahead, and to discourage last minute pleas for help.
+* **Evidence will be required** (e.g., medical certificate).
+* As per policy, you must submit your request **at least one _working_ day before the original due date**. Do not expect or request that I (or other teaching staff) will be working on weekends or after hours. Requests received close to the assessment date (or after the date!) will generally not be accepted except in the most extreme circumstances. We encourage students to plan days and weeks ahead, and to discourage last minute pleas for help.
+* **Do not just stop working and "wait" when you submit your request.** First, you do not know if it will be granted. Second, we expect you will still be working on the project and the extension will be based on that. Keep working and even submit as early as you can before receiving the notification and decision.
+* Evidence of sustainable work on the assessment will strengthen your case.
+* You may be required to explain how the extension will affect your future study deadlines, for this and other courses. We are always careful to ensure that any extension does not impede too much on other assessment, and does not have a domino effect.
+
+Each request will be considered on an individual basis. If the request is approved, the deadline for the assignment will be extended. If the request is denied and the assessment missed, you will unfortunately receive a zero for that assessment. Remember though that it is always possible to submit late.
+
+Note that in many cases (e.g., long extensions), though, I cannot grant unilateral special considerations and you may need to go through RMIT formal process for [Special Consideration (SPC)](http://www.rmit.edu.au/students/specialconsideration). Because of the nature of many project assessments and the quick release of results, any non short term SPC will probably be in the form of an **Equivalent Assessment**, that is, another _ assessment later on that will assess the same content but possibly in a different way. In most cases this will involve a pre-arranged in-person 1-2hrs closed-book assessment with the instructor (e.g., a set of exercises to complete).
+
+
+## I am very busy with other commitments (work, other subjects, travel, etc.) and may not be able to make the deadline, can I get an extension?
+
+Only unexpected circumstances outside your control (e.g., illness) extensions or equivalent assessments will be granted; see question above.
+
+For other situations, we expect students enrolled in the course to _have arranged all their other commitments_ (e.g., work, other courses, family, trips, etc.) beforehand to make sure they can carry out the course _under the planned schedule_. Ultimately, meeting deadline does matter and is part of demonstrating meeting the course [AQF Level 7-9](https://www.aqf.edu.au/framework/aqf-levels#toc-aqf-level-7-criteria-3) expectations:
+
+![aqf7](img/aqf7-autonomy.png)
+
+Observe that we have 300+ students and therefore lots of students could claim time constraints for multiple reasons. Besides the unmanageable workload that this would imply (reviewing and tracking each case, marking them at different times, different releases, etc.), I am _not able/allowed to arbitrarily judge_ which cases are OK and which ones are not: I would undoubtedly be making mistakes and hence treating students differently, _which can put me in a very risky situation due to fairness issues_.
+
+Also, we note that the difficulty of each assessment has been planned to be achievable within the time-frame, so claims about the difficulty of the task will not be entertained for extensions. Pushing one deadline for many students will not only complicate the execution of the course, but will put students in a more difficult situation for upcoming (more demanding) assessments.
 
 ## I am not available for the Exercise Challenge (EC) or Take Home Exercises (THE), can I take them some other time?
 
@@ -440,15 +449,15 @@ I was already able to book one of the largest rooms available at RMIT. Initially
 
 In a nutshell, no assessment is perfect AND all they all have resource and trade-offs implications. It not uncommon that students are unaware of these.
 
-For example, programming projects of the sort we have may not be able to test higher-order problem solving skills and they are weak in robustly guaranteeing integrity. In turn, timed-based assessments are not able to assess ability to build complex solutions that require extended period of times (e.g., non-trivial software solutions). Paper-based assessments require significant manual marking resourcing for large classes, and have longer turn-around. Answer-sheet based assessments may not be able to assess complex problems and will therefore rely on quite specific targeted exercises/problems. Oral examinations can very precisely assess knowledge and skills for each individual, but requires significant resourcing and critical judgment from the evaluator.
+For example, programming projects of the sort we have may not be able to test higher-order problem solving skills and they are weak in robustly guaranteeing integrity. In turn, timed-based assessments are not able to assess ability to build complex solutions that require extended period of times (e.g., non-trivial software solutions). Paper-based assessments require significant manual marking resourcing for large classes, and have longer turn-around. Answer-sheet based assessments may not be able to assess complex problems and will therefore rely on quite specific targeted exercises/problems. Oral examinations can very precisely assess knowledge and skills for each individual, but requires significant resourcing and critical judgement from the evaluator.
 
 Because of all the tread-offs, and based on the experience over many years, we designed a mix of assessments _within the resources available_ that include both _practical offline work_ (via several projects) as well as _in-person targeted technical challenges_. We strongly believe the set-up is comprehensive, engaging, and fair, though we will always recognise that no assessment is perfect and we have been adapting or assessments based on experience and changes in context (particularly resourcing). _We are also open to constructive suggestions for consideration_ (it is best always if they have been thought in the context of trade-offs and resourcing implications, of course). In fact, we usually gauge students' perspective in each assessment. While there are definitively other possible frameworks, they all have to deal with trade-offs: there is no free lunch.
 
-We hope this provides a bit more context and happy to hear. :-)
+We hope this provides a bit more context and happy to hear. 😄
 
 ## In a code assignment/project, how do I make sure I do not go against academic integrity?
 
-Good one! This deserves its own separate answer [here](../AI23-DOC.git/CODE-INTEGRITY.md).
+Good one! This deserves its own separate answer [here](CODE-INTEGRITY.md).
 
 ## Why did I get 57 in the assignment/project if it is 5% of the course?
 
