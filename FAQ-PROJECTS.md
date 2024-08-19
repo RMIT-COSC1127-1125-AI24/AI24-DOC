@@ -68,6 +68,14 @@ As any FAQ page, this page is always "under construction". As we realize that so
   - [Break-points do not work on `search.py`, why?](#break-points-do-not-work-on-searchpy-why)
   - [In the feedback autograder, what does `expanded_states` means?](#in-the-feedback-autograder-what-does-expanded_states-means)
   - [What we should return for the failure case, ie. when no path can be found?](#what-we-should-return-for-the-failure-case-ie-when-no-path-can-be-found)
+- [Project 2](#project-2)
+  - [Inconsistent depth in minimax project 2, Q2 and careful use of `__init__`](#inconsistent-depth-in-minimax-project-2-q2-and-careful-use-of-__init__)
+  - [Can we apply a "magic number" such as -9999 in our evaluation functions, as part of our logic not simply an arbitrary "return -9999"?](#can-we-apply-a-magic-number-such-as--9999-in-our-evaluation-functions-as-part-of-our-logic-not-simply-an-arbitrary-return--9999)
+  - [In Q4, what does it mean an adversary which chooses amongst their `getLegalActions` uniformly at random?](#in-q4-what-does-it-mean-an-adversary-which-chooses-amongst-their-getlegalactions-uniformly-at-random)
+  - [The results of the feedback autograder with graphics and without graphics are very different! My system works without graphics but times out with graphics and I lose all games, why?](#the-results-of-the-feedback-autograder-with-graphics-and-without-graphics-are-very-different-my-system-works-without-graphics-but-times-out-with-graphics-and-i-lose-all-games-why)
+  - [When I run the autograder I get the message _"has not SIGALRM"_, why?](#when-i-run-the-autograder-i-get-the-message-has-not-sigalrm-why)
+  - [What is a reasonable time for Question 5?](#what-is-a-reasonable-time-for-question-5)
+  - [Is there a way to run the evaluation function in Question 5 in harder setting or with more ghosts?](#is-there-a-way-to-run-the-evaluation-function-in-question-5-in-harder-setting-or-with-more-ghosts)
 -------------------------
 
 # GENERAL
@@ -285,14 +293,14 @@ This is what I get in the cluster:
 
 ```shell
 $ python bench.py
-python-speed v1.3 using python v3.10.6
-string/mem: 2181.89 ms
-pi calc/math: 2979.85 ms
-regex: 3508.85 ms
-fibonnaci/stack:  2791.22 ms
-multiprocess: 1468.98 ms
+python-speed v1.3 using python v3.10.12
+string/mem: 2187.5 ms
+pi calc/math: 2867.82 ms
+regex: 3132.5 ms
+fibonnaci/stack:  1904.6 ms
+multiprocess: 1297.76 ms
 
-total:  12930.8 ms (lower is better)
+total:  11390.18 ms (lower is better)
 ```
 
 And this is what I get from my laptop:
@@ -300,19 +308,16 @@ And this is what I get from my laptop:
 ```shell
 $ python bench.py
 python-speed v1.3 using python v3.10.12
-string/mem: 1044.85 ms
-pi calc/math: 2012.68 ms
-regex: 1722.82 ms
-fibonnaci/stack:  995.85 ms
-multiprocess: 484.14 ms
+string/mem: 1126.62 ms
+pi calc/math: 2231.34 ms
+regex: 1877.54 ms
+fibonnaci/stack:  1250.05 ms
+multiprocess: 509.13 ms
 
-total:  6260.34 ms (lower is better)
+total:  6994.68 ms (lower is better)
 ```
 
-As you can see my laptop is ~2x faster than the cluster machines.
-
-So, _how fast is your laptop_?
-
+As you can see my laptop is ~2x faster than the cluster machine! So, _how fast is your laptop_?
 
 ## How can I check which GH username I am using for GitHub Classroom in the course?
 
@@ -797,3 +802,148 @@ Basically, the number of times you have done expansion of nodes, that is, number
 ## What we should return for the failure case, ie. when no path can be found?
 
 `None`
+
+
+-----------------
+# Project 2
+
+## Inconsistent depth in minimax project 2, Q2 and careful use of `__init__`
+
+So it looks like this issue is due to issues in calling constructors of parent classes (i.e. `__init__`). This can be a bit tricky, so here is the takeaway that is needed for this project:
+
+If you want to add an `__init__` method into any (or all) of `MinimaxAgent`, `AlphaBetaAgent`, or `ExpectimaxAgent`, it should look like this:
+
+```python
+class MinimaxAgent(MultiAgentSearchAgent):
+    def __init__(self, **kwargs):
+    "*** YOUR CODE HERE ***"
+    super().__init__(**kwargs)
+```
+
+This ensures that you aren't interfering with the arguments being passed through to the `MultiAgentSearchAgent` subclass. For anyone who wants to know why you need to do this and what that means, keep reading.
+
+Let's imagine you want to add something to the constructor (i.e. the `__init__` method) of `MinimaxAgent`, for whatever reason. Your first attempt might look like:
+
+```python
+class MinimaxAgent(MultiAgentSearchAgent):
+    def __init__(self):
+    self.foo = 0 # initialise foo
+```
+
+This should fail with the following `error: TypeError: __init__()` got an unexpected keyword argument 'depth'.
+
+Why is that? Well, the test harness is trying to call `__init__()` on `MultiAgentSearchAgent` to pass in the depth (and potentially `evalFn`) argument. Your new constructor now overwrites the original constructor of `MultiAgentSearchAgent`, and it isn't expecting any arguments, hence the error. What you want to do is call the parent constructor from within your constructor, to make sure that you aren't interfering with the original code. You can try to do so with the `super()` keyword like so:
+
+```python
+class MinimaxAgent(MultiAgentSearchAgent):
+    def __init__(self):
+    self.foo = 0 # initialise foo
+    super().__init__()
+```
+
+But this still gives the same error, as you haven't passed through the arguments. You can pass them through manually like so:
+
+```python
+class MinimaxAgent(MultiAgentSearchAgent):
+    def __init__(self, evalFn = 'scoreEvaluationFunction', depth = '2'):
+    self.foo = 0 # initialise foo
+    super().__init__(evalFn, depth)
+```
+
+However this runs into a number of problems:
+
+If you have multiple parent classes (either directly or indirectly), you don't know which arguments to pass.
+It duplicates code (including default arguments), now a change to one class needs to be made in many places.
+It requires you to know exactly what the parent class is doing, which is not ideal.
+
+This is where `**kwargs` comes in. For our purposes we can think of `**kwargs` as a dictionary that store an unlimited number of keyword arguments to a function, where we don't have to know what they are. This allows you to pass then on to other functions from parent classes, but you can also access them like any other dictionary:
+
+```python
+class MinimaxAgent(MultiAgentSearchAgent):
+    def __init__(self, **kwargs):
+    self.foo = 0 # initialise foo
+    print("Minimax depth: ", kwargs['depth'])
+    super().__init__(**kwargs)
+```
+
+More details about super can be found [here](https://stackoverflow.com/questions/2399307/how-to-invoke-the-super-constructor-in-python) (although it lacks discussion of arguments), and details about kwargs [here](https://stackoverflow.com/questions/3394835/use-of-args-and-kwargs).
+
+## Can we apply a "magic number" such as -9999 in our evaluation functions, as part of our logic not simply an arbitrary "return -9999"?
+
+You would not be marked down for using a number like that - however if you really want a very large number, you might consider using `math.inf` instead, or even `float('inf')`.
+
+## In Q4, what does it mean an adversary which chooses amongst their `getLegalActions` uniformly at random?
+
+All it means is that the other players in the game are acting randomly, with no bias towards any action: all legal actions have the same chance of being executed. For example, if player 2 has three legal moves: left, down and up, then it will choose left with 33% chances, down with 33% chances and up with 33% chances.
+
+## The results of the feedback autograder with graphics and without graphics are very different! My system works without graphics but times out with graphics and I lose all games, why?
+
+When you run it with graphics, it's just running out of time because it takes a while for the games to display. No need to worry, we will be grading _without_ graphics so it will not timeout for that reason (if you just run `python autograder.py` without specifying a question, it runs without graphics as default). The graphics are just there so you can see the behaviour of your agents more clearly.
+
+## When I run the autograder I get the message _"has not SIGALRM"_, why?
+
+That message is fine, you can ignore it. It is mostly a debug message and we will probably remove it for future projects. Thanks!
+
+## What is a reasonable time for Question 5?
+
+It is hard to give precise times, as that will depend on what hardware you are running on. See [question above](#how-do-i-compare-the-speed-of-my-desktoplaptop-with-that-from-the-cluster-being-used-for-marking) regarding how to compare the relative speed of your machine with that of the cluster machines used for marking.
+
+On our own desktop, our solution runs the entire `Q5` from start to finish  in ~5 seconds (`python autograder.py -q q5 --no-graphics`). For reference, if we just `return 0`, it takes ~3 seconds just to run the games themselves.
+
+Now here is how it runs our solution in the cluster:
+
+```shell
+$ python autograder.py -q q5 --no-graphics
+
+Question q5
+===========
+Playing 10 games with seed 0 and timeouts set to 120 seconds.
+Pacman emerges victorious! Score: 1359
+Pacman emerges victorious! Score: 1161
+Pacman emerges victorious! Score: 1338
+Pacman emerges victorious! Score: 1283
+Pacman emerges victorious! Score: 1340
+Pacman emerges victorious! Score: 1346
+Pacman emerges victorious! Score: 1151
+Pacman emerges victorious! Score: 1277
+Pacman emerges victorious! Score: 1311
+Pacman emerges victorious! Score: 1191
+Average Score: 1275.7
+Scores:        1359.0, 1161.0, 1338.0, 1283.0, 1340.0, 1346.0, 1151.0, 1277.0, 1311.0, 1191.0
+Win Rate:      10/10 (1.00)
+Record:        Win, Win, Win, Win, Win, Win, Win, Win, Win, Win
+*** PASS: p2-multiagent-grader/marking-packs/02.AI22/q5/grade-agent.test (6 of 6 points)
+***     1275.7 average score (2 of 2 points)
+***         Grading scheme:
+***          < 500:  0 points
+***         >= 500:  1 points
+***         >= 1000:  2 points
+***     10 games not timed out (1 of 1 points)
+***         Grading scheme:
+***          < 0:  fail
+***         >= 0:  0 points
+***         >= 10:  1 points
+***     10 wins (3 of 3 points)
+***         Grading scheme:
+***          < 1:  fail
+***         >= 1:  1 points
+***         >= 5:  2 points
+***         >= 10:  3 points
+=====> Time taken for question:  5.831640720367432
+```
+
+As you can see, our solution less than 6 seconds in the cluster.
+
+## Is there a way to run the evaluation function in Question 5 in harder setting or with more ghosts?
+
+Try:
+
+```shell
+$ python .\pacman.py -p ExpectimaxAgent -a evalFn=better
+```
+
+or even harder!:
+
+```shell
+$ python .\pacman.py -p ExpectimaxAgent -a evalFn=better -l originalClassic
+```
