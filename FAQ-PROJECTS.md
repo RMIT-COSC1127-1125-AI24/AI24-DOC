@@ -88,7 +88,9 @@ Check the [answer to this key question here](../AI23-DOC.git/CODE-INTEGRITY.md)
 
 We will not fix any submission and it is your responsibility to do it correctly.
 
-However, the nice thing about git-based projects/assessments is that we can rely on commits. If you have submitted your tag incorrectly (did not tag it at all, tagged with different name or different capital letters), then please fix your submission by tagging the specific commit you want me to mark. I will use the timestamp of the commit itself, not of when it was tagged. This means that if the commit was done before the deadline, then all good!! Isn't this cool?
+However, the nice thing about git-based projects/assessments is that we can rely on commits. So, if you have submitted your tag incorrectly (did not tag it at all, tagged with different name or different capital letters), then please fix your submission by tagging the specific commit you want me to (re)mark and let us know you did so in the corresponding PR of your repo (no email, no forum). 
+
+Note we will of course use the timestamp of the commit itself, not of when it was tagged. This means that if the commit was done before the deadline, then all good!! Isn't this cool?
 
 ## Project specification says "You should code your implementation only at the locations ...." . Does this mean that we can't create our custom classes outside the provided functions?
 
