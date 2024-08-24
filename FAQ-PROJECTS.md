@@ -16,7 +16,7 @@ As any FAQ page, this page is always "under construction". As we realize that so
 - [GIT \& GITHUB](#git--github)
   - [Git, GitHub, what is that?](#git-github-what-is-that)
   - [Can I just use GitHub Desktop instead of command line `git`?](#can-i-just-use-github-desktop-instead-of-command-line-git)
-  - [How do I submit my project solution in my GIT repository?](#how-do-i-submit-my-project-solution-in-my-git-repository)
+  - [How do I submit my project solution in my GIT repository via tagging?](#how-do-i-submit-my-project-solution-in-my-git-repository-via-tagging)
   - [How do I change the submission tag if I have already tagged one commit for submission?](#how-do-i-change-the-submission-tag-if-i-have-already-tagged-one-commit-for-submission)
   - [How do I update the tags in my local repo? I get rejection with "(would clobber existing tag)" message](#how-do-i-update-the-tags-in-my-local-repo-i-get-rejection-with-would-clobber-existing-tag-message)
   - [Is a tag the same as a release in GitHub?](#is-a-tag-the-same-as-a-release-in-github)
@@ -157,7 +157,7 @@ Now, if you are using GitHub Desktop just because you do not know how to use git
 Critically, you will not get help from staff about how to use GitHub Desktop, since we (or at least most of us) don't use it. 🤦
 
 
-## How do I submit my project solution in my GIT repository?
+## How do I submit my project solution in my GIT repository via tagging?
 
 You submit by **tagging the _exact_ commit that you want to submit and be marked**, using the exact name given in the assignment specification. We will ONLY marked tagged submissions and will ONLY mark the tagged commit. Students can have many commits, and branches, even commits after the deadline. We will mark ONLY what you submit.
 
@@ -181,7 +181,14 @@ $ git tag -a submission <hash of commit to tag>
 $ git push origin submission
 ```
 
-Check the remote has the tag where you wanted!
+Check the remote has the tag where you wanted and that it also contains all the commits you did towards the tag!
+
+> [!IMPORTANT]
+>
+> Before pushing your tag to the remote repo, make sure all the commits you did have already been pushed to the remote too. Check that in the GitHub remote. It is wrong to push just the tag without pushing the actual commits, as it will yield a tag not belonging to any branch history:
+>
+> ![](img/tag-no-commits.png)
+
 
 Note that _a tag name can only be used once_, so if you already have a tag `submission` and want to use that tag name on another commit (e.g., you have a better, more recent, commit for your solution), you first need to delete the existing tag; see the next question for that. :-)
 
