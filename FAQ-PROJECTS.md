@@ -726,7 +726,7 @@ OK, but _faster than what?_ Well, at least faster than if we do not use a heuris
 ```shell
 $ python pacman.py -l trickySearch -p AStarFoodSearchAgent -q
 
-Path found with total cost of 60 in 1.9 seconds
+Path found with total cost of 60 in 1.5 seconds
 Search nodes expanded: 16688
 Pacman emerges victorious! Score: 570
 Average Score: 570.0
@@ -735,13 +735,13 @@ Win Rate:      1/1 (1.00)
 Record:        Win
 ```
 
-So it takes 1.9 seconds when running the agent with an "empty" heuristic. What happens when we plugged our heuristic?
+So it takes 1.9 seconds (in the cluster machines) when running the agent with an "empty" heuristic. What happens when we plugged our heuristic?
 
 
 ```shell
 $ python pacman.py -l trickySearch -p AStarFoodSearchAgent -q
 
-Path found with total cost of 60 in 0.2 seconds
+Path found with total cost of 60 in 0.3 seconds
 Search nodes expanded: 255
 Pacman emerges victorious! Score: 570
 Average Score: 570.0
@@ -750,7 +750,7 @@ Win Rate:      1/1 (1.00)
 Record:        Win
 ```
 
-As one can see the time was cut down to just 0.2 seconds (10% of the time when no heuristic is used!) and the number of nodes expanded to just 255. Note this is a very powerful heuristic (it expanded only 255 nodes!), and we are not expecting this to get full marks. There are very fast implementations taking 0.5secs and expanding ~1500 nodes, way below the 7000 mark!
+As one can see the time was cut down to just 0.2 seconds (20% of the time when no heuristic is used!) and the number of nodes expanded to just 255. Note this is a very powerful heuristic (it expanded only 255 nodes!), and we are not expecting this to get full marks. There are still very fast implementations taking 0.5secs and expanding ~1500 nodes, way below the 7000 mark!
 
 So, the question is not just whether the heuristic reduces the number of expansions, but also, ultimately, the search time.
 
@@ -762,6 +762,9 @@ When solving this question consider:
 Basically you are after a good enough A* implementation and a heuristic that _significantly improves_ A* when used without heuristic.
 
 Remember that a heuristic is useful, only if gives benefit over not using it; otherwise what is the point of it? If your heuristic expands very few nodes, BUT it takes a lot of time to compute, then the heuristic will not be beneficial after all. Consider, what would be the very best heuristic you can use (but not useful)? ;-)
+
+> [!NOTE]
+The performance runs were done in the cluster machines. Your laptop may be faster. In my laptop, the above runs take 1 and 0.2 seconds, resp. To have an estimation how that compares with your machine, check [this question](https://github.com/RMIT-COSC1127-1125-AI24/AI24-DOC/blob/main/FAQ-PROJECTS.md#how-do-i-compare-the-speed-of-my-desktoplaptop-with-that-from-the-cluster-being-used-for-marking).
 
 Finally, take note of the comment in the source code:
 
