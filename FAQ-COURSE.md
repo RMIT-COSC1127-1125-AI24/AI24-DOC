@@ -417,7 +417,7 @@ Each request will be considered on an individual basis. If the request is approv
 Note that in many cases (e.g., long extensions), though, I cannot grant unilateral special considerations and you may need to go through RMIT formal process for [Special Consideration (SPC)](http://www.rmit.edu.au/students/specialconsideration). Because of the nature of many project assessments and the quick release of results, any non short term SPC will probably be in the form of an **Equivalent Assessment**, that is, another _ assessment later on that will assess the same content but possibly in a different way. In most cases this will involve a pre-arranged in-person 1-2hrs closed-book assessment with the instructor (e.g., a set of exercises to complete).
 
 > [!IMPORTANT]
-> When you submit a request for extension (to lecturer or SPC team), do not just wait idle until the notification arrives. Your are expected to continue working and submit the assessment as soon as you could, while your application is being assessed.
+> If your application relates to a request for an extension of time for submittable work (such as assignments, projects, essays, etc.) to either the instructor or SPC team, it is expected that you will continue to progress that work and submit it as soon as possible while your application is under consideration. Do not just wait idle until the notification arrives. Your are expected to continue working and submit the assessment as soon as you could, while your application is being assessed.
 
 
 ## I am very busy with other commitments (work, other subjects, travel, etc.) and may not be able to make the deadline, can I get an extension?
