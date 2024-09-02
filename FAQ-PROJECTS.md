@@ -120,12 +120,19 @@ As recognised by students, the autograder is indeed a fantastic feedback before 
 
 It is a fair question: _why don't we just care about the AI algorithm and that's it?_
 
-There are, at least three reasons to include SE and version control practices as part of the work and assessments of the course:
+There are are least three main reasons to include SE and version control practices as part of the work and assessments of the course:
 
-1. It is the way AI software and solutions are developed these days. Hence, good SE practices, and particularly version control, is part of the overall training we promote in our courses, particularly in advanced courses.
-2. We want to be able to see evidence of _student workings_ towards the final solution, not just the solution. This is analogous to math assessments say: we want to know how you got to that, not just the final answer. It is normal in math that when workings are asked, a solution without workings will get no marks.
-3. Good SE and version control will be _fundamental_ for the final contest project in order to be _productive_. This is because it is a large task and in teams, so using poor SE and git processes will be a serious obstacle.
-   - This means that it is important to promote and enforce good practices from the initial, smaller, project assignments, so that we increase the chances good practices in the final project. The initial projects thus serve as strong signals that hopefully will result in better outcomes in the larger assessment task.
+- We want to see the _**process**_ towards your solution, not just the solution(s) to a question. We want to be able to see _evidence of student workings towards_ the final solution.
+    - This is **analogous to when we do Maths**: we do not want to see just the final answer, but also HOW you got to that answer.
+    - This process will include your intermediate and alternative solutions, your partial solutions, your bugs and fixes, your optimisations, your thought process, etc.
+- **Good development of AI techniques** (and software in general) is also super important today, and a place for learning. It is _the way AI software and solutions are developed these days_, the state-of-the-art. Hence, good SE practices, and particularly version control, is part of the overall training we promote in our courses, particularly in advanced courses.
+- Version Control contributes to CLO 5 (on develop _adequate_ AI solutions for problems) as well as CLO 6 (_communicate_ with the language of the field). Version control is not only the adequate way to develop complex software but also a way to communicate to others your work and solutions.
+
+Note that the number of commits is not per se "the issue," that is, it is not about counting and "the more the better." Lots of dummy, non-meaningful, commits is also very poor. However, a very low number of atomic meaningful commits is a proxy that could **signal qualitative problems** in terms of good development process. That is why we expect students to critically judge what is a good history and what is a poor one, which one show evidence of sustainable work and which one does not. The good healthy history should come as a natural consequence of the work done. It would be very poor educationally to say "16 commits," because this is a qualitative criteria first.
+
+Finally, the expectations on this have been very clearly stated from Project 0, including stating that "bulk commits will be heavily penalised" as they show no evidence of student's working to the solution and are at odds with state-of-the-art AI development. Besides the issue being explicitly mentioned in project specifications, lectorials, slides, forum and FAQ, we provided a clear guide on each dimension and clear examples of what are good development histories in GIT; see [HERE](SE-PRACTICES.md).
+
+Hope this puts some context and rationale to the issue, and serves as a good learning opportunity!
 
 ## Can I just add dummy/padding commits to have more commits?
 
