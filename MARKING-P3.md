@@ -252,6 +252,7 @@ So, we would run each test set in two modes:
 We would then take the one that achieves more points. You will see that in the report as follows:
 
 ```
-   best_mode: You scored the most points when we ran your code with your implementations for prior questions, so all results for this question are using your implementations.
+   best_mode: You scored the most points when we ran your code with your implementations 
+   for prior questions, so all results for this question are using your implementations.
 ```
 
