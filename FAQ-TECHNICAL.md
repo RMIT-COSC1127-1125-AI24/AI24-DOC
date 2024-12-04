@@ -7,6 +7,11 @@ This FAQ contains some common technical questions.
   - [Are HSLD and Manhattan distance same?](#are-hsld-and-manhattan-distance-same)
   - [In terms of evaluation function `f(n)`, is A\* search combination of uniform-cost search and greedy best-first search?](#in-terms-of-evaluation-function-fn-is-a-search-combination-of-uniform-cost-search-and-greedy-best-first-search)
   - [Are uniform-cost search and best-first search the same?](#are-uniform-cost-search-and-best-first-search-the-same)
+  - [Do I have to use every clause in a resolution proof?](#do-i-have-to-use-every-clause-in-a-resolution-proof)
+  - [Can we use a clause more than once in a resolution proof?](#can-we-use-a-clause-more-than-once-in-a-resolution-proof)
+  - [Can we resolve more than one literals in one step?](#can-we-resolve-more-than-one-literals-in-one-step)
+  - [Are starting utilities initially set to 0, or to the reward for that state?](#are-starting-utilities-initially-set-to-0-or-to-the-reward-for-that-state)
+  - [How should I structure a proof?](#how-should-i-structure-a-proof)
 
 ## Is stochastic and non-deterministic the same?
 
@@ -43,3 +48,38 @@ In uniform cost search, evaluation function is the cost of the path from the ini
 ## Are uniform-cost search and best-first search the same?
 
 Dijkstra’s algorithm or Uniform-cost search is Best-first search when the evaluation function is the cost of the path from the root to the current node. So, UCS is one of the many possible instantiations of best-first search.
+
+## Do I have to use every clause in a resolution proof?
+
+No!
+
+It helps to remember what a resolution proof is actually doing, rather than just thinking of symbols moving around on paper. You have a knowledge base which represents a lot of things you know about the world. For example:
+
+1. Bob is a cat, 
+2. no cat is a dog, 
+3. elephants are large, 
+4. Edwina is an elephant, 
+5. cats are not large, 
+6. ....
+
+If you are trying to prove 'Bob is not a dog', then you can intuitively see that you should only need facts 1 and 2. If your resolution proof requires facts 3-5, something has gone wrong!
+
+## Can we use a clause more than once in a resolution proof? 
+
+Yes, see answer to prior question. Just because you have used a fact, does not make it become less true after the fact.
+
+## Can we resolve more than one literals in one step?
+No, this is technically incorrect. Review the textbook, or see [this question](https://math.stackexchange.com/questions/1506990/logical-resolution-why-only-one-pair-of-complementary-literals-can-be-used)
+
+## Are starting utilities initially set to 0, or to the reward for that state?
+
+This is just a matter of convention. In an assessment we will make sure the explicitly specify what to do.
+
+
+## How should I structure a proof?
+
+In general if you are asked to prove $X=Y$, you generally want to prove this "in one direction", rather than "meeting in the middle". I.e. set up the proof in the form of a series of statements. $X=X_1, X_1=X_2, \ldots, X_2=X_n, X_n = Y$ Rather than $X=X_1, X_1=X_2, \ldots, X_{n-1}=X_n, X_n = Z$ and $Y=Y_1, Y_1=Y_2, \ldots, Y_{n-1}=Y_n, Y_n = Z$
+
+Why is this? If you are strictly proving $A=B$ and every statement is of the form of an equality, then I think it is mainly a matter of style. But you are often only proving $X\Rightarrow Y$, in which case $X\Rightarrow X_1, X_1\Rightarrow X_2, \ldots, X_2\Rightarrow X_n, X_n \Rightarrow Y$ is a valid proof, but the other form is not. (Why? This is left as an exercise to the reader, try to come up with a counterexample.)
+
+I do find sometimes it is more natural to meet in the middle somewhere, but once you have the actual links you need, it is best to rearrange into this standard form. 

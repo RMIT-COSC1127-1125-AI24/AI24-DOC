@@ -20,13 +20,14 @@ As any FAQ page, this page is always "under construction". As we realize that so
   - [How do I change the submission tag if I have already tagged one commit for submission?](#how-do-i-change-the-submission-tag-if-i-have-already-tagged-one-commit-for-submission)
   - [How do I update the tags in my local repo? I get rejection with "(would clobber existing tag)" message](#how-do-i-update-the-tags-in-my-local-repo-i-get-rejection-with-would-clobber-existing-tag-message)
   - [Is a tag the same as a release in GitHub?](#is-a-tag-the-same-as-a-release-in-github)
+  - [My project solution is contained in multiple commits, which do I tag?](#my-project-solution-is-contained-in-multiple-commits-which-do-i-tag)
   - [Cannot clone or push to GitHub with my password credentials?](#cannot-clone-or-push-to-github-with-my-password-credentials)
   - [I get `Permission denied (publickey).` from GitHub](#i-get-permission-denied-publickey-from-github)
   - [I have committed to the remote repo but I am not listed as a "contributor", why?](#i-have-committed-to-the-remote-repo-but-i-am-not-listed-as-a-contributor-why)
   - [Commits not correctly associated to my GitHub account, why?](#commits-not-correctly-associated-to-my-github-account-why)
   - [I made a bad commit and pushed to repo, how can I undo it?](#i-made-a-bad-commit-and-pushed-to-repo-how-can-i-undo-it)
-  - [How do I compare the speed of my desktop/laptop with that from the cluster being used for marking?](#how-do-i-compare-the-speed-of-my-desktoplaptop-with-that-from-the-cluster-being-used-for-marking)
   - [How can I check which GH username I am using for GitHub Classroom in the course?](#how-can-i-check-which-gh-username-i-am-using-for-github-classroom-in-the-course)
+  - [I can't open a project in VSCode when clicking the button from GitHub](#i-cant-open-a-project-in-vscode-when-clicking-the-button-from-github)
 - [PYTHON](#python)
   - [What version of Python should I use?](#what-version-of-python-should-i-use)
   - [How do I run Python 3.8 in `coreteachingXX.csit.rmit.edu.au`?](#how-do-i-run-python-38-in-coreteachingxxcsitrmiteduau)
@@ -34,6 +35,7 @@ As any FAQ page, this page is always "under construction". As we realize that so
   - [How do I know the type of a variable in Python?](#how-do-i-know-the-type-of-a-variable-in-python)
   - [AttributeError: module 'importlib' has no attribute 'util'](#attributeerror-module-importlib-has-no-attribute-util)
   - [How do I represent infinity?](#how-do-i-represent-infinity)
+  - [How do I compare the speed of my desktop/laptop with that from the cluster being used for marking?](#how-do-i-compare-the-speed-of-my-desktoplaptop-with-that-from-the-cluster-being-used-for-marking)
 - [GENERAL PACMAN](#general-pacman)
   - [What is the best way to develop my solutions for the Pacman project?](#what-is-the-best-way-to-develop-my-solutions-for-the-pacman-project)
   - [How to run Pacman remotely from `coreteaching`?](#how-to-run-pacman-remotely-from-coreteaching)
@@ -52,8 +54,10 @@ As any FAQ page, this page is always "under construction". As we realize that so
   - [Can I change the pacman infrastructure at run-time?](#can-i-change-the-pacman-infrastructure-at-run-time)
   - [Can I use catch all exceptions in my code, or exceptions from the infrastructure?](#can-i-use-catch-all-exceptions-in-my-code-or-exceptions-from-the-infrastructure)
   - [Should we remove this line `util.raiseNotDefined()` before starting our code or not? What does it do?](#should-we-remove-this-line-utilraisenotdefined-before-starting-our-code-or-not-what-does-it-do)
+  - [My editor shows an error trying to import pacman module](#my-editor-shows-an-error-trying-to-import-pacman-module)
 - [Project 0](#project-0)
   - [Do we have to handle edge cases? For example, for the `shopSmart` function, what should we do if a fruit is _not_ present in one of the shops?](#do-we-have-to-handle-edge-cases-for-example-for-the-shopsmart-function-what-should-we-do-if-a-fruit-is-not-present-in-one-of-the-shops)
+  - [Does the reference to 'pounds' in buyLotsOfFruit.py refer to weight (lb) or cost (£)?](#does-the-reference-to-pounds-in-buylotsoffruitpy-refer-to-weight-lb-or-cost-£)
 - [Project 1](#project-1)
   - [Do we need to do all the "`*** YOUR CODE HERE ***`" method?](#do-we-need-to-do-all-the--your-code-here--method)
   - [Can I import standard libraries?](#can-i-import-standard-libraries)
@@ -68,6 +72,8 @@ As any FAQ page, this page is always "under construction". As we realize that so
   - [Break-points do not work on `search.py`, why?](#break-points-do-not-work-on-searchpy-why)
   - [In the feedback autograder, what does `expanded_states` means?](#in-the-feedback-autograder-what-does-expanded_states-means)
   - [What we should return for the failure case, ie. when no path can be found?](#what-we-should-return-for-the-failure-case-ie-when-no-path-can-be-found)
+  - [For Q9 cycle checking, should we check only a few levels, or all the way up to the root node?](#for-q9-cycle-checking-should-we-check-only-a-few-levels-or-all-the-way-up-to-the-root-node)
+  - [In Q6 or Q7 I am getting `FAIL: inconsistent heuristic path` for a test case, what does this mean?](#in-q6-or-q7-i-am-getting-fail-inconsistent-heuristic-path-for-a-test-case-what-does-this-mean)
 - [Project 2](#project-2)
   - [Inconsistent depth in minimax project 2, Q2 and careful use of `__init__`](#inconsistent-depth-in-minimax-project-2-q2-and-careful-use-of-__init__)
   - [Can we apply a "magic number" such as -9999 in our evaluation functions, as part of our logic not simply an arbitrary "return -9999"?](#can-we-apply-a-magic-number-such-as--9999-in-our-evaluation-functions-as-part-of-our-logic-not-simply-an-arbitrary-return--9999)
@@ -76,6 +82,28 @@ As any FAQ page, this page is always "under construction". As we realize that so
   - [When I run the autograder I get the message _"has not SIGALRM"_, why?](#when-i-run-the-autograder-i-get-the-message-has-not-sigalrm-why)
   - [What is a reasonable time for Question 5?](#what-is-a-reasonable-time-for-question-5)
   - [Is there a way to run the evaluation function in Question 5 in harder setting or with more ghosts?](#is-there-a-way-to-run-the-evaluation-function-in-question-5-in-harder-setting-or-with-more-ghosts)
+  - [Unlike in P1, we are not given explicit pseudocode, can we still follow the book?](#unlike-in-p1-we-are-not-given-explicit-pseudocode-can-we-still-follow-the-book)
+  - [Can I reuse code from P1 in my heuristic evaluation function (e.g. copy my A* search over?)](#can-i-reuse-code-from-p1-in-my-heuristic-evaluation-function-eg-copy-my-a-search-over)
+  - [Autograder is passing Q1, but the scores from the games are negative, is this ok?](#autograder-is-passing-q1-but-the-scores-from-the-games-are-negative-is-this-ok)
+- [Project 3](#project-3)
+  - [I want to get a head start and learn prolog now! How can I do it?](#i-want-to-get-a-head-start-and-learn-prolog-now-how-can-i-do-it)
+  - [GitHub is telling me all checks have failed, but some tests are passing on my machine, is this a problem?](#github-is-telling-me-all-checks-have-failed-but-some-tests-are-passing-on-my-machine-is-this-a-problem)
+  - [GitHub error on push `The following actions use a deprecated Node.js ...`](#github-error-on-push-the-following-actions-use-a-deprecated-nodejs)
+  - [Is it ok to change the parameter structure of the predicates we are told to implement?](#is-it-ok-to-change-the-parameter-structure-of-the-predicates-we-are-told-to-implement)
+  - [Is it ok to define multiple versions of the predicates (helpful for base and edge cases)?](#is-it-ok-to-define-multiple-versions-of-the-predicates-helpful-for-base-and-edge-cases)
+  - [Is it ok to define helper functions?](#is-it-ok-to-define-helper-functions)
+  - [My solution prints false when the example doesn't, or warning: `Test tools_for_items_2: Test succeeded with choicepoint`](#my-solution-prints-false-when-the-example-doesnt-or-warning-test-tools_for_items_2-test-succeeded-with-choicepoint)
+  - [Best way to check empty list in Prolog](#best-way-to-check-empty-list-in-prolog)
+  - [Do we need to handle cyclic dependencies?](#do-we-need-to-handle-cyclic-dependencies)
+  - [What do the question marks mean in the predicate: `tool_for_item(?Item, ?Tool)`?](#what-do-the-question-marks-mean-in-the-predicate-tool_for_itemitem-tool)
+  - [I can't see the full output in prolog, I am getting dots instead indicating it continues. How can I see everything?](#i-cant-see-the-full-output-in-prolog-i-am-getting-dots-instead-indicating-it-continues-how-can-i-see-everything)
+- [Project 4](#project-4)
+  - [What are 'Noise' and 'LivingReward' in Q3?](#what-are-noise-and-livingreward-in-q3)
+  - [How should we come up with values for Q3? Do we just guess? Do we have to explain it?](#how-should-we-come-up-with-values-for-q3-do-we-just-guess-do-we-have-to-explain-it)
+  - [What do I need to do for Q7? The autograder passes without any new code.](#what-do-i-need-to-do-for-q7-the-autograder-passes-without-any-new-code)
+  - [The textbook algorithm for Value Iteration takes $\epsilon$ as a parameter, where is this in the project code?](#the-textbook-algorithm-for-value-iteration-takes--as-a-parameter-where-is-this-in-the-project-code)
+  
+
 -------------------------
 
 # GENERAL
@@ -94,7 +122,7 @@ Note we will of course use the timestamp of the commit itself, not of when it wa
 
 ## Project specification says "You should code your implementation only at the locations ...." . Does this mean that we can't create our custom classes outside the provided functions?
 
-Yes, you can create some help functions or classes, but **always** in the allowed files. Any other change in any other file will be totally ignored.
+You can create some help functions or classes, but **always** in the allowed files. Any other change in any other file will be totally ignored.
 
 If you want to create custom classes and functions, you can also nest them inside the location where you read `***YOUR CODE HERE***`. See [this link](https://www.datacamp.com/community/tutorials/inner-classes-python) and [this link](https://www.programiz.com/python-programming/closure#:~:text=A%20function%20defined%20inside%20another,in%20order%20to%20modify%20them) for more info.
 
@@ -188,6 +216,7 @@ $ git tag -a submission <hash of commit to tag>
 $ git push origin submission
 ```
 
+By `<hash of commit to tag>`, we mean the 6-8 character hexadecimal string which uniquely identifies a commit.
 Check the remote has the tag where you wanted and that it also contains all the commits you did towards the tag!
 
 > [!IMPORTANT]
@@ -239,6 +268,18 @@ This will fetch all the changes from the remote, but also all the tags. The `-f`
 No, a _tag_ is a _git concept_, whereas a `Release` is something about GitHub, beyond git itself. So, they are not synonymous.
 
 A tag is a _pointer_ to a specific commit, that's all, you basically give a name to a specific commit. This is what we use to mark the commit that is meant to be submitted for marking.
+
+## My project solution is contained in multiple commits, which do I tag?
+The last one. 
+I think the confusion here is because there are two potentially different things you can mean with the same word commit.
+You are thinking of commit as a set of changes to files - so the commit itself is only made up of the edits you have made since the last commit.
+We are thinking of a commit as a snapshot of the entire repository at a point in time, which shows exactly what all the files looked like in the repo in their entirety.
+
+A commit is both things! (I will spare you links to documentation to prove it). 
+As a result, when you commit your final changes to the assignment (even if it is just changing your name in a readme file), and then you tag that commit, we can see all of the files that exist in the repo after you have completed everything. No need to 'recommit' things which you have done before.
+
+To make you comfortable with this, browse around the GitHub page for your project repo. When you make a tag, you should be able to see a link to it, and even download the repo at that tag as a zip file. If you unzip it, you will see the entire repo. 
+
 ## Cannot clone or push to GitHub with my password credentials?
 
 As [per August 12th, 2021 GitHub post](https://github.blog/changelog/2021-08-12-git-password-authentication-is-shutting-down/), GitHub is not no longer accepting account passwords when authenticating Git operations, like cloning private repos or pushing changes. You should use **token-based authentication**, such as  personal access, OAuth, SSH Key, or GitHub App installation token.
@@ -299,45 +340,13 @@ This states that you want to revert the changes to `HEAD` by `1` commit (the las
 
 Read more about `git revert` [here](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert).
 
-## How do I compare the speed of my desktop/laptop with that from the cluster being used for marking?
-
-In general the cluster is not very fast, hence it won't be a surprise if your laptop runs faster.
-
-You can compare the relative speed of your machine against the cluster using [python-speed](https://github.com/vprelovac/python-speed).
-
-This is what I get in the cluster:
-
-```shell
-$ python bench.py
-python-speed v1.3 using python v3.10.12
-string/mem: 2187.5 ms
-pi calc/math: 2867.82 ms
-regex: 3132.5 ms
-fibonnaci/stack:  1904.6 ms
-multiprocess: 1297.76 ms
-
-total:  11390.18 ms (lower is better)
-```
-
-And this is what I get from my laptop:
-
-```shell
-$ python bench.py
-python-speed v1.3 using python v3.10.12
-string/mem: 1126.62 ms
-pi calc/math: 2231.34 ms
-regex: 1877.54 ms
-fibonnaci/stack:  1250.05 ms
-multiprocess: 509.13 ms
-
-total:  6994.68 ms (lower is better)
-```
-
-As you can see my laptop is ~2x faster than the cluster machine! So, _how fast is your laptop_?
-
 ## How can I check which GH username I am using for GitHub Classroom in the course?
 
 The GitHub username you selected is in the name of all of the projects you clone. (e.g. if the repo is called `project-1-search-<username>`, then you used GH `username` account). This is the account with which you should make commits with so we can link them to you through classrooms. You must then have your GIT configuration to commit with such user so that your commits are counted as yours. See [this question](#i-have-committed-to-the-remote-repo-but-i-am-not-listed-as-a-contributor-why) as well.
+
+# I can't open a project in VSCode when clicking the button from GitHub
+
+This is often due to a space in a file path on your machine (generally for Windows users), but might have other causes. This button relies on a VSCode extension that is deprecated, so may not be reliable. We strongly encourage all students to clone the repository locally on their machine, and work from there. 
 
 ------------------------------
 # PYTHON
@@ -415,6 +424,42 @@ We are still investigating this issue as it seems to work well in our set-up. Th
 The best way is to use [`math.inf`](https://docs.python.org/3/library/math.html#math.inf). Python can handle arbitrarily large numbers, and so `math.inf` is both correct and also meaningful for the reader.
 
 **Note:** avoid using `sys.maxsize`; you can check what happens if you do `sys.maxsize < sys.maxsize*2`. :-)
+
+## How do I compare the speed of my desktop/laptop with that from the cluster being used for marking?
+
+In general the cluster is not very fast, hence it won't be a surprise if your laptop runs faster.
+
+You can compare the relative speed of your machine against the cluster using [python-speed](https://github.com/vprelovac/python-speed).
+
+This is what I get in the cluster:
+
+```shell
+$ python bench.py
+python-speed v1.3 using python v3.10.12
+string/mem: 2187.5 ms
+pi calc/math: 2867.82 ms
+regex: 3132.5 ms
+fibonnaci/stack:  1904.6 ms
+multiprocess: 1297.76 ms
+
+total:  11390.18 ms (lower is better)
+```
+
+And this is what I get from my laptop:
+
+```shell
+$ python bench.py
+python-speed v1.3 using python v3.10.12
+string/mem: 1126.62 ms
+pi calc/math: 2231.34 ms
+regex: 1877.54 ms
+fibonnaci/stack:  1250.05 ms
+multiprocess: 509.13 ms
+
+total:  6994.68 ms (lower is better)
+```
+
+As you can see my laptop is ~2x faster than the cluster machine! So, _how fast is your laptop_?
 
 ------------------------------
 # GENERAL PACMAN
@@ -650,6 +695,10 @@ Most solutions won't require catching any exception, but if you happen to do/nee
 
 Yes, you should remove it - to figure out what it does I encourage you to look up its definition in `util.py` ;-)
 
+## My editor shows an error trying to import pacman module
+At line 32 of autograder.py (or perhaps elsewhere in different projects), you might see an underline with a warning message saying 'Import "pacman" could not be resolved'. This is not a problem, as the code is wrapped in a try/except block, so you can ignore this warning from your editor.
+
+![Pacman import warning](img/pacman-import-warning.png)
 -----------------
 # Project 0
 
@@ -670,6 +719,8 @@ Note that, for all future projects you should consider edge cases carefully and 
 
 One could import the function from Q2 and use that instead, but the function signatures then won't match, so one needs to create a wrapper in Q2 anyway, and it all gets a bit messy. Fundamentally if you use `getPriceOfOrder`, it will give wrong results for any shops which don't stock all your fruit, but that does seem to be the intended solution.
 
+## Does the reference to 'pounds' in buyLotsOfFruit.py refer to weight (lb) or cost (£)?
+The weight; this project was made in the US so uses US terminology, not UK.
 
 -----------------
 # Project 1
@@ -807,21 +858,21 @@ Remember the key tasks in designing a search-based solution:
 
 This issue is about the first task: _representation_.
 
-## Break-points do not work on `search.py`, why?
-
-You are probably running the debugger from the `autograder.py`. The feedback autograder does some fancy things (e.g, translation to bytecode) that interferes with the debugger. One way around it (reported by an AI'23 student, thanks Thomas!) is to just run the debugger on `pacman.py` instead and running suitable commands via `args` in the debugging `launch.json`.
-
-In fact, this is the best practice because the actual system is `pacman.py`, not the autograder. :-)
-
 ## In the feedback autograder, what does `expanded_states` means?
 
 Basically, the number of times you have done expansion of nodes, that is, number of calls to `getSuccessors()`` method. Makes sense? :-)
 
+## For Q9 cycle checking, should we check only a few levels, or all the way up to the root node?
 
-## What we should return for the failure case, ie. when no path can be found?
+While the book discusses both options, for project 1 you should implement a cycle check that goes all the way up to the initial state.
 
-`None`
+## In Q6 or Q7 I am getting `FAIL: inconsistent heuristic path` for a test case, what does this mean?
 
+You have an inconsistent heuristic; i.e. it either 
+- overestimates the true cost, or 
+- it overestimates the difference between two nodes. (i.e. X and Y are neighbours, heuristic cost of X is 10, Y is 13, and the cost from X to Y is 2).
+
+You will need to try to figure out why your heuristic is inconsistent, and fix it, or use an entirely different heuristic.
 
 -----------------
 # Project 2
@@ -966,3 +1017,118 @@ or even harder!:
 ```shell
 $ python .\pacman.py -p ExpectimaxAgent -a evalFn=better -l originalClassic
 ```
+
+Alternatively: 
+if you go into `test_cases/q5/grade-agent.test`, you can change the autograder to use different maps by modifying the `layoutName` field. You can also add more ghosts by modifying the ghosts field to this value: `"[RandomGhost(1), RandomGhost(2)]"`.
+
+But we only care about the agents performance in the setting run by the autograder under original settings. 
+
+## Unlike in P1, we are not given explicit pseudocode, can we still follow the book?
+Yes of course! The reason we don't stress this point in this assignment is that there is really only one way to do Minimax, so there is not such an issue with little subtle differences.
+
+## Can I reuse code from P1 in my heuristic evaluation function (e.g. copy my A* search over?)
+Yes!
+
+## Autograder is passing Q1, but the scores from the games are negative, is this ok?
+Yes, each timestep you lose 1 score. If the game goes for a very long time, you can have a negative score even if you eat all the food.
+
+-----------------
+# Project 3
+
+## I want to get a head start and learn prolog now! How can I do it?
+Good on you for looking ahead, I have found these helpful in the past. 
+
+- An Introduction to Prolog (Appendix A). In: [An Introduction to Language Processing with Perl and Prolog](https://link.springer.com/chapter/10.1007/3-540-34336-9_16). Cognitive Technologies. 2006. Springer, Berlin, Heidelberg.
+- https://www.metalevel.at/prolog
+
+But also for everyone else don't worry, we will be releasing additional resources closer to the assignment. Things will make more sense once you have seen predicate logic in class.
+
+## GitHub is telling me all checks have failed, but some tests are passing on my machine, is this a problem?
+
+Some of you have noticed that for this project, you might see something that looks like this in your feedback branch in your repo.
+
+![Checks failed](img/GitHub-checks-failed.png)
+
+While it says "All checks have failed" this is not a problem! All it means is that your latest code does not fully pass the provided unit tests. 
+
+This is a feature of GitHub classrooms that was briefly mentioned in the spec: 
+
+> This repo includes some unit testing cases to provide you with valuable feedback. The tests are run every time you push to your remote, but you can also run the tests locally via goal `run_tests/0` as follows: ...
+
+The unit tests are run as a hook every time you push to GitHub, which allows us to track your progress in real time. This is just one more reason to make sure you are committing often, including code which is not fully complete!
+
+The reason you are seeing all checks have failed, even when you have passed some the tests is that GitHub only knows about the top level. As far as GitHub is concerned, there is one test being run, that either passes or fails. But that is actually made of lots of test cases, grouped by exercise, which is where the 5 points are coming from. If you click on the details next to the failing check, you will see all the test output.
+
+You may notice that all checks are failing on the feedback branch in particular, this is because that branch does not have any of your code in it, so it will always show as failing. This is not a problem.
+
+## GitHub error on push `The following actions use a deprecated Node.js ...`
+This is just a configuration issue behind the scenes for the GitHub automated testing (see above answer for more details). You can safely ignore.
+
+## Is it ok to change the parameter structure of the predicates we are told to implement?
+> eg:- `P(x)` could be changed to `P([H|T])`?
+
+Yes, note this does not change the predicate signature itself, it is just changing the names used to refer to different parts of the argument.
+
+## Is it ok to define multiple versions of the predicates (helpful for base and edge cases)?
+Yes, and it would be almost impossible to complete the assignment without it.
+
+## Is it ok to define helper functions?
+Yes, these are called auxiliary predicates, and are in the spec already:
+> You would probably need to use auxiliary predicates, and resort to recursive definitions.
+
+## My solution prints false when the example doesn't, or warning: `Test tools_for_items_2: Test succeeded with choicepoint`
+![Choice point example](img/prolog-choicepoint.png)
+
+Both of these have the same root cause, and the short answer is that you don't need to worry about it. 
+
+The longer answer is:
+Fundamentally, the error is essentially saying that your predicate is finding only the one right answer, but in order to confirm that is the single correct answer it needs to backtrack through a bunch of choices it makes along the way, which is inefficient. However, a good solution will be written such that finding the single correct answer does not leave any unresolved choices, so it can return immediately.
+From my perspective, it would be better if you could get rid of this, but in this course we will not penalise you for this behaviour. Usually we try to remove those dummy choice points, but sometimes it is not possible or it becomes a mess. 
+
+
+## Best way to check empty list in Prolog
+> Are there any differences/considerations/trade-offs between \= [] and \+ length(someList, 0) ?
+
+The first reads easier and more direct, so I wold use that. 
+
+In some circumstances you might even get different results. If someList is only partially instantiated; i.e. it is [2,3,X] where X is still a free variable that may be a continuation of the list, then length may be undefined, but at least 2. In this case the first is clear, [2,3,X] \= [], but I don't know whether prolog would be able to tell that length>=2 and therefore the second would also fail.
+
+And if you want to check if it is a list or not, just use is_list/1
+
+## Do we need to handle cyclic dependencies?
+
+> e.g. where an item has itself as an ingredient, or a tool required to make an item, has that item as an ingredient.
+
+No, for this assignment, it is safe to assume that every recipe is possible to make even starting with nothing. That means, no cycles in ingredients (because then it would be impossible to craft the item), and also no cycles in tools (as it would make it impossible to craft the tools). 
+
+## What do the question marks mean in the predicate: `tool_for_item(?Item, ?Tool)`?
+
+These are the [argument mode indicators](https://www.swi-prolog.org/pldoc/man?section=argmode), `?` means it can be provided or not.
+
+## I can't see the full output in prolog, I am getting dots instead indicating it continues. How can I see everything?
+
+Press `w` after it prints the dots to see the full output.
+
+
+-----------------
+# Project 4
+
+## What are 'Noise' and 'LivingReward' in Q3?
+Living reward is the reward given to the agent at each time step regardless of the state it is in (for 'living' another timestep). 
+
+Noise is the probability that the agent accidentally moves left/right instead of in the direction it meant to go.
+
+## How should we come up with values for Q3? Do we just guess? Do we have to explain it?
+You should definitely not be blindly guessing, but you may need to try a few informed guesses before you get the right answer. You do not need to explain your values.
+
+Longer answer: There is no way to take the expected policy and somehow solve backwards to recover these parameter values, because the values are not unique. There are many (often infinitely many!) different parameter combinations that will lead to the same policy. 
+Instead, you should use your understanding of Q-learning to understand which values will result in each of the indicated outcomes. Whether this can be done purely intuitively, or requires actual policy calculations, will depend on how deep your understanding is.
+
+If it seems like a big ask to do this intuitively the only tip I have is that generally in these situations you want to consider extreme values for parameters because that will have the biggest effects.
+
+
+## What do I need to do for Q7? The autograder passes without any new code.
+If you have done all of the previous questions properly, it is very possible for Q7 to run correctly without any new code. It is essentially just applying your existing code to pacman (which is why it is only worth 1 mark). The intention is just for you to understand how the training process works, and to motivate Q8 with the failures of your Q-learning agent to win on the medium grid.
+
+## The textbook algorithm for Value Iteration takes $\epsilon$ as a parameter, where is this in the project code?
+The project uses a slightly different version of the algorithm, so there is no epsilon paramter. There is however, a variable that serves a similar purpose. As a hint, what is the point of epsilon in the original algorithm? How is that objective achieved in the project code?

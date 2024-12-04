@@ -19,6 +19,7 @@ For specific FAQ on programming projects see [here](FAQ-PROJECTS.md).
   - [I am enrolled in COSC1125 (PGRD) but my Canvas says COSC1127 (UGRD). Is everything OK?](#i-am-enrolled-in-cosc1125-pgrd-but-my-canvas-says-cosc1127-ugrd-is-everything-ok)
   - [I enrolled late in the course, can you explain me about X, Y, and Z about the course? What should I do now?](#i-enrolled-late-in-the-course-can-you-explain-me-about-x-y-and-z-about-the-course-what-should-i-do-now)
   - [I have a question about the course, but it is not here!](#i-have-a-question-about-the-course-but-it-is-not-here)
+  - [What version of the book is used in this course?](#what-version-of-the-book-is-used-in-this-course)
   - [Why do you use many platforms (EdStem, Canvas, GitHub, email, GH Classroom, Google, etc.) instead of just Canvas as other courses?](#why-do-you-use-many-platforms-edstem-canvas-github-email-gh-classroom-google-etc-instead-of-just-canvas-as-other-courses)
 - [DISCUSSION FORUM \& FORUM ETIQUETTE](#discussion-forum--forum-etiquette)
 - [LECTORIALS \& TUTORIALS](#lectorials--tutorials)
@@ -50,6 +51,12 @@ For specific FAQ on programming projects see [here](FAQ-PROJECTS.md).
   - [Why did I get 57 in the assignment/project if it is 5% of the course?](#why-did-i-get-57-in-the-assignmentproject-if-it-is-5-of-the-course)
   - [How do I prepare for the final in-person assessment (THE/EC)?](#how-do-i-prepare-for-the-final-in-person-assessment-theec)
   - [I will not be around for the final in-person assessment, can I take it online or before?](#i-will-not-be-around-for-the-final-in-person-assessment-can-i-take-it-online-or-before)
+  
+   - [How to type symbols in the in-person assessment?](#how-to-type-symbols-in-the-in-person-assessment)
+   - [What formulas will be provided in the in-person assessment?](#what-formulas-will-be-provided-in-the-in-person-assessment)
+   - [Are we expected to do proofs in the in-person assessment?](#are-we-expected-to-do-proofs-in-the-in-person-assessment)
+   - [Would I be asked to write out exact implementation of an algorithm? (e.g. Breath-First Search)](#would-i-be-asked-to-write-out-exact-implementation-of-an-algorithm-eg-breath-first-search)
+   - [What does negative marking mean?](#what-does-negative-marking-mean)
 
 # GENERAL
 
@@ -203,6 +210,9 @@ So this means that:
 In summary, the course is very intense, even for those starting on time, and every week matters. I am OK if you join late after discussing with your PM, as long as you **take full responsibility** of such late start. Of course I am also OK with students contacting me before formally enrolled and while they are waiting for administrative process to conclude; this will allow students to stay in sync with the course until all paper-work is sorted out.
 
 Hope this is clear and all the best in the course!
+
+## What version of the book is used in this course?
+As of 2024, we use the [Global 4th edition](https://aima.cs.berkeley.edu/global-index.html) (not to be confused with the US 4th edition), which has a green cover.
 
 ## I have a question about the course, but it is not here!
 
@@ -532,3 +542,37 @@ Therefore, we will **_not_** prepare and conduct assessments via video calls or 
 Remember we have 300+ students and everybody have their own constraints and personal circumstances (family, work, travel, holidays, etc.). It would be TOTALLY impossible for us to cater for each individual circumstances, we just do not have the bandwidth (and we educators also have our lives...).
 
 What you can do is to **apply for SPC early in advance**, and provide your evidence for such request. If granted, you will be allowed to take a new assessment in the **DEFERRED ASSESSMENT** period. For Semester 2, it is often early December. Please check the [Academic Calendar](https://www.rmit.edu.au/students/my-course/important-dates) of the year to know when exactly those assessment will be running. It is good you are thinking ahead on this, **good luck!**
+
+
+## In the mock test I had a partially correct answer but got no marks for it!
+In the real one, this would be awarded some partial marks, but it is a time consuming process to properly calibrate the fair amount of marks for each possible combination of answers, so we have not done that for the mock. We do not use simple formulas to calculate the correct marks, we use academic judgement on a case-by-case basis to judge the level of comprehension displayed by the answer.
+
+## How to type symbols in the in-person assessment?
+
+Where precise formatting is required, we give clear specifications. All symbols used are found on standard keyboards.
+
+## What formulas will be provided in the in-person assessment?
+
+None, but you are allowed to bring in a standard A4 handwritten note sheet (it can be typed/printed but should not have any diagrams that are more complex than you could reasonably produce with pen and paper)
+
+## Are we expected to do proofs in the in-person assessments?
+> Can I assume all the questions are short answer and MCQ and there will not no prove questions?
+
+You will not be asked to construct a proof from scratch.
+
+BUT I would be careful, your question assumes that MCQ/short answer questions do not involve proofs. We have in the past had various questions involving proofs in a MCQ/short answer format. We can be quite creative when designing questions! 
+e.g. 
+Order these lines in the correct order to prove x, fill in the gaps of the incomplete proof from this selection, identify the lines with faulty logic, there are many ways you can do it!
+
+## Would I be asked to write out exact implementation of an algorithm? (e.g. Breath-First Search)
+
+1. You would not be asked to write it out in python, or any actual programming language. 
+2. It is possible you could be asked to write out pseudocode for it, but we would be lenient about precise details in this case. i.e. You are NOT expected to memorise the exact pseudocode, but you ARE expected to understand the algorithm well enough to reproduce the key aspects of it.
+3. You definitely may be asked questions about the properties of algorithms. 
+
+## What does negative marking mean?
+
+> You’ve mentioned that there is no negative marking on the midsem. Just for clarification wouldn’t that mean one could select all the options in a multiple choice question and get full marks?
+
+No, we aren't that silly!
+By no negative marking we just mean that at a per question level, you are not penalised for getting a wrong answer vs leaving it blank. Always have a go!
