@@ -55,6 +55,7 @@ As any FAQ page, this page is always "under construction". As we realize that so
   - [Can I use catch all exceptions in my code, or exceptions from the infrastructure?](#can-i-use-catch-all-exceptions-in-my-code-or-exceptions-from-the-infrastructure)
   - [Should we remove this line `util.raiseNotDefined()` before starting our code or not? What does it do?](#should-we-remove-this-line-utilraisenotdefined-before-starting-our-code-or-not-what-does-it-do)
   - [My editor shows an error trying to import pacman module](#my-editor-shows-an-error-trying-to-import-pacman-module)
+  - [The autograder says `FAIL: Exception raised ...` but I am not sure which test case failed](#the-autograder-says-fail-exception-raised--but-i-am-not-sure-which-test-case-failed)
 - [Project 0](#project-0)
   - [Do we have to handle edge cases? For example, for the `shopSmart` function, what should we do if a fruit is _not_ present in one of the shops?](#do-we-have-to-handle-edge-cases-for-example-for-the-shopsmart-function-what-should-we-do-if-a-fruit-is-not-present-in-one-of-the-shops)
   - [Does the reference to 'pounds' in buyLotsOfFruit.py refer to weight (lb) or cost (£)?](#does-the-reference-to-pounds-in-buylotsoffruitpy-refer-to-weight-lb-or-cost-£)
@@ -699,6 +700,11 @@ Yes, you should remove it - to figure out what it does I encourage you to look u
 At line 32 of autograder.py (or perhaps elsewhere in different projects), you might see an underline with a warning message saying 'Import "pacman" could not be resolved'. This is not a problem, as the code is wrapped in a try/except block, so you can ignore this warning from your editor.
 
 ![Pacman import warning](img/pacman-import-warning.png)
+
+## The autograder says `FAIL: Exception raised ...` but I am not sure which test case failed
+Due to the structure of the autograder, it cannot tell which test threw the exception. Tests are run in alphabetical order, so you can check yourself. The test failing will be the one immediately after the last one that passed. E.g. `0-small-tree` in the screenshot below.
+
+![Exception raised by test 0-small-tree](img/exception_test.png)
 -----------------
 # Project 0
 
